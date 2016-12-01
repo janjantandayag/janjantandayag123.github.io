@@ -1,0 +1,1471 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*END CSS RESET */
+
+/* TEMPORARY NAV */
+.tempo-nav a{
+    margin-right: 50px;
+    color:#000;
+    margin-top:20px;    
+}
+.tempo-nav a.tempo-active{
+    color:green;
+    font-weight: bold;
+}
+
+/*TOP-NAV*/
+#top-nav{
+    background: #a9cf38;
+}
+#top-nav ul, #primary-nav ul{
+    list-style: none;
+    text-transform: uppercase;
+    float:right;
+}
+#top-nav ul li, #primary-nav ul li{
+    float:left;
+}
+#primary-nav ul li.active a{
+    color:#a9cf38;
+}
+#top-nav ul li:hover{
+    background: #99bf2a;
+}
+#top-nav ul li{
+    padding:10px 5px;
+}
+#top-nav ul li.selected{
+    background:#99bf2a;
+}
+#top-nav ul li a,#top-nav ul li span{
+    color:#fff;
+}
+#top-nav ul li a{
+    font-size:80%;
+    text-decoration: none;
+}
+#top-nav ul li:hover{
+    cursor: pointer;
+}
+#top-nav ul li:not(.social){
+    padding-right: 35px;
+    padding-top:10px;
+    padding-bottom: 13px;
+}
+#top-nav ul li span{
+    font-size:150%;
+}
+/*PRIMARY NAV*/
+#primary-nav{
+    padding:15px 0px 10px 0px;
+}
+#primary-nav ul li a{
+    color:#231f20;
+    font-size:75%;
+    text-decoration: none;
+    font-weight: bold;
+}
+#primary-nav ul li{
+    margin-left:40px;
+}
+#primary-nav ul li:last-child a{
+    color:#fff
+}
+#primary-nav ul li{
+    padding-top:20px;
+}
+#primary-nav ul li:last-child{
+    background:#ed4593;
+    padding:20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+#slider h1, #slider span, #slider a, .form-header h2,.services-header h2, #team .team-header h2, #blog .blog-header h2, .contact-header h2, #dentist-content h2{
+    text-transform:uppercase;
+}
+
+
+#slider{
+    background:#a9cf38;
+    padding:172px 0px 187px 0px;
+    position:relative;
+    max-height: 700px;
+}
+#slider span{
+    position: relative;
+    display: inline-block;
+    font-size:125%;
+    color:#fff;
+    margin-top:120px;
+}
+#slider h1{
+    font-size:525%;
+    color:#fff;
+    margin-top:15px;
+}
+#slider p{
+    font-size:125%;
+    color:#fff;    
+    margin-top:25px;
+}
+#slider a{
+    display:inline-block;
+    color:#fff;
+    font-size:75%;
+    padding:14px 45px;
+    background:#ed4593;
+    margin-top:50px;
+}
+#slider .img-slide-1{
+    position: relative;
+    float:right;
+    right:20px;
+}
+#slider .img-slide-2{
+    position: relative;
+    float:right;
+    margin-right:20px;
+    top: -100px;
+}
+#slider .img-slide-2 img{
+  width:650px;
+}
+
+#slider .carousel-inner{
+    position: relative;
+    top: -120px;
+}
+
+#appointment-form{
+    padding:50px 0px;
+}
+.form-header h2, .services-header h2,#team .team-header h2,#blog .blog-header h2, .contact-header h2,#dentist-content .dentist-container h2{
+    display:inline-block;
+    width:100%;
+    font-size:125%;
+    border-bottom:2px solid #dadada;
+    padding-bottom:20px;
+    margin-bottom:35px;
+}
+.form-header h2 span, .services-header h2 span,  #team .team-header h2 span, #blog .blog-header h2 span, .contact-header h2 span,#dentist-content .dentist-container h2 span{
+    border-bottom:2px solid #a9cf38;
+    padding-bottom:20px;
+}
+#appointment-form form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color:#b4b4b4;
+}
+#appointment-form form input::-moz-placeholder { /* Firefox 19+ */
+   color:#b4b4b4;
+}
+#appointment-form form input:-ms-input-placeholder { /* IE 10+ */
+    color:#b4b4b4;
+}
+#appointment-form form input:-moz-placeholder { /* Firefox 18- */
+    color:#b4b4b4;
+}
+#appointment-form form input, #appointment-form form select {
+    border:2px solid #dadada;
+    height:45px;
+}
+#appointment-form form select, #appointment-form form input[type='date'], #appointment-form form input[type='time']{
+    color:#b4b4b4;
+}
+#appointment-form button, #faqs button{
+    border:none;
+    background:#ed4593;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:75%;
+    padding:20px 60px;
+    margin-top:20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#appointment-form .no-padding-left{
+    padding:0;
+}
+/*SERVICES*/
+#services{
+    background: url(img/services-bg.jpg) center center;
+    background-size: cover;
+    padding: 60px 0px 60px 0;
+}
+#services .service-header{
+    margin-top:40px;
+}
+#services .col-md-6:hover{
+    cursor: pointer;    
+}
+.services-hover{
+    border:2px solid green;
+    border-radius:50%;
+    padding:40px;   
+}
+
+#services .services-header-desc p, #team .team-header-desc p, #blog .blog-header-desc p, .contact-header-desc p, #dentist-content p{
+    font-size:93.75%;
+    line-height: 28px;
+}
+#services .service-header img{
+    border:2px solid #555555;
+    border-radius:50%;
+    padding:40px;   
+}
+#services .service-header h3{
+    font-size: 125%;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+#services .service-header p{
+    font-size:93.75%;
+    line-height:20px;
+}
+#services .see-full,#team .see-full {
+    margin-top:85px;
+    text-align: center;
+    vertical-align: center;
+}
+#services .see-full a:first-child,#services .see-full a:last-child, #team .see-full a:last-child,#team .see-full a:first-child{
+    padding:15px 20px;
+    border:2px solid #555555;
+    border-radius: 5px;
+    color:#555555;
+    display:inline-block;
+    text-decoration: none;
+}
+#services .see-full a:nth-child(2),#team .see-full a:nth-child(2){
+    text-transform: uppercase;
+    font-size: 75%;
+    padding:15px 30px;
+    color:#ed4593;
+    border:2px solid #ed4593;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#video{
+    background:url(img/video-bg.jpg) center center;
+    background-size: cover;
+    padding: 238px 0px;
+}
+#video .play-button{
+    text-align: center;
+}
+#setup-appointment, #patient-registration-form{
+    background:#1d1d1d;
+    padding:50px 0px;
+}
+#setup-appointment h3,#patient-registration-form h3{
+    text-transform: uppercase;
+    font-size:125%;
+    color:#a9cf38;
+    margin-bottom: 15px;    
+}
+#setup-appointment p,#patient-registration-form p{
+    font-size:93.75%;
+    color:#fff;
+    line-height: 20px;
+}
+#setup-appointment a, #patient-registration-form a{
+    width:100%;
+    text-align: center;
+    display:block;
+    text-transform: uppercase;
+    color:#fff;
+    background:#ed4593;
+    padding:30px 20px;
+    font-size:125%;
+    border-radius: 5px;
+}
+#patient-registration-form a span{
+    font-size:150%;
+    position: relative;
+    top:5px;
+    margin-right:15px;
+}
+
+/* TEAM */
+#team, #dentist-content{
+    padding:55px 0 90px 0px;
+}
+#team .team-row, #dentist-content .team-row{
+    margin-top:32px;
+    margin-bottom: 65px;
+}
+#team img, #dentist-content img{
+    width:100%;
+}
+#team .member-desc h2,#dentist-content .member-desc h2{
+    font-size: 87.5%;
+    color:#fff;
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 13px 0px 13px 22px;
+    font-weight: bold;
+}
+#team .member-desc, #dentist-content .member-desc{
+    background:#a9cf38;
+    position: relative;
+    width:60%;
+    display:inline;
+}
+#team .member-desc h4, #dentist-content .member-desc h4{
+    font-size: 93.75%;
+    color:#fff;
+    display:block;
+    padding-left: 22px;
+    margin-top:-8px;
+}
+#team .member-social  span,#dentist-content .member-social span{
+    color:#fff;
+    margin-right:10px;
+}
+#team .member-social, #dentist-content .member-social{
+    background: #232323;
+    
+}
+#team .row, #dentist-content .row{
+    position: relative;
+}
+#team .member-wrapper,#dentist-content .member-wrapper{
+    margin: 0 auto;
+    margin-top:-35px;
+    background:#a9cf38;
+    position:relative;
+    height: 60px;
+    max-width:90%;
+    z-index:1;
+    overflow:hidden;
+    border-radius: 5px;
+}
+#team .member-social, #dentist-content .member-social{
+    position: absolute;
+    top:0;
+    right:0;
+    width:90px;
+    height:100%;
+    background:#232323;
+    padding-top:20px;
+}
+#team .member-social:before, #dentist-content .member-social:before, #dentist-content .member-social:before{
+    content:"";
+    width:100%;
+    height:150%;
+    background-color: #232323;
+    z-index:-1;
+    position: absolute;
+    top:-1px;
+    left:-25%;
+    transform:rotate(30deg) translate(-25px, -10px);
+    transform-origin: bottom left;
+}
+
+#team .member-det p ,#dentist-content .member-det p{
+    text-align: center;
+    font-size:93.75%;
+    color:#555555;
+    line-height:20px;
+    margin-top:20px;
+}
+
+/* TESTIMONIAL */
+#testimonial{
+    background: url(img/testimonial-bg.jpg) center center;
+    background-size: cover;
+    padding: 100px 0px 40px 0px;
+}
+#testimonial .quote p{
+    color:#231f20;
+    text-align: center;
+}
+#testimonial .testimony{
+    width:80%;
+    margin: 0 auto;
+}
+#testimonial .testimony p{
+    font-size:93.75%;
+    color:#555555;
+    display: inline-block;
+    text-align: center;
+    margin-top:20px;
+}
+#testimonial .user{
+    text-align:center;
+    margin-top:30px;
+}
+#testimonial .user img{
+    border-radius: 50%;
+    display: inline-block;
+    border:10px solid rgba(0,0,0,.3);
+}
+#testimonial .user h3,#testimonial .user h2{
+    color:#231f20;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#testimonial .user h3{
+    font-size:93.75%;
+    margin-top:10px;
+}
+#testimonial .user h2{
+    font-size:156.25%;
+    margin-top:15px;
+}
+#testimonial .carousel-indicators{
+    position: relative;
+    text-align: center;
+    list-style: none;
+    bottom:0;
+    margin-top:85px;
+}
+#testimonial .carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #606060;
+    border: none;
+    border-radius: 50%;
+}
+#testimonial .carousel-indicators .active{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #606060;
+    border: none;
+    border-radius: 50%;
+    background-color: #a9cf38;
+}
+
+/* CAROUSEL */
+
+
+
+#blog{
+    background: url(img/services-bg.jpg) center center;
+    background-size: cover;
+    padding: 52px 0px 82px 0px;
+}
+#blog .blog-header-desc{
+    margin-bottom: 20px;
+}
+.blog-margin-top{
+    margin-top:30px;
+}
+#blog img{
+    width:100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.blogs-wrapper{
+    position:relative;
+    max-width:370px;
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog-desc{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    padding: 25px 0 25px 25px;
+    background:rgba(169,207,56, .8);
+}
+#blog .blogs-wrapper .col-md-4:nth-child(4), #blog .blogs-wrapper .col-md-4:nth-child(5), #blog .blogs-wrapper .col-md-4:last-child{
+    margin-top:30px;
+}
+.blog-desc h3, .blog-description h3{
+    font-size: 100%;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.blog-desc p, .blog-description p{
+    font-size:81.25%;
+    color:#fff;
+}
+.blog-desc p span, .blog-description p span{
+    border-bottom:1px solid #fff;
+}
+#contact-head{
+    padding:50px 0 40px 0;
+}
+#contact-body{
+    background: #a9cf38;
+    padding:45px 0;
+    position: relative;
+}
+#contact-body form input{
+    height: 45px;
+}
+#contact-body form button{
+    background:#ed4593;
+    text-transform: uppercase;
+    font-size:75%;
+    color:#fff;
+    border:none;
+    padding: 20px 50px;
+    border-radius:5px;
+    font-weight: bold;
+}
+#contact-body .bg-img{
+    position: relative;
+}
+#contact-body .bg-img img{
+    position: absolute;
+    bottom: -45px;
+    right:0px;
+}
+
+
+#pre-footer{
+    padding:40px 0 80px 0;
+    background:#232323;
+}
+#pre-footer .pre-footer-header h4{
+    text-transform: uppercase;
+    font-size:93.75%;
+    color:#fff;
+}
+#pre-footer .pre-footer-header hr{
+    background: #a9cf38;
+    height:2px;
+}
+#pre-footer ul li{
+    list-style: none;
+    margin-top:15px;
+}
+#pre-footer .col-md-4:last-child .col-md-3, #pre-footer .col-md-4:nth-child(2) .col-md-3{
+    padding:0 10px;
+} 
+#pre-footer ul li a{    
+    color:#fff;
+    font-size:88%;
+}
+#pre-footer .col-md-4:last-child li:first-child a{
+    color:#a9cf38;
+}
+#footer{
+    background:#191919;
+}
+#footer .copyright{
+    font-size: 62.5%;
+    color:#fff;
+}
+#footer .copyright span:first-child{
+    text-transform: uppercase;
+    color:#a9cf38;
+    font-weight: bold;
+}
+#footer .copyright p{
+    display:inline-block;
+}
+#footer .copyright .img-footer{
+    display:inline-block;
+}
+#footer .copyright .img-footer a{
+    position: relative;
+    top:6px;
+}
+#footer ul {
+    list-style: none;
+}
+#footer ul li a span{
+    color:#fff;
+}
+#footer ul li{
+    display: inline-block;
+    padding:10px 5px;
+}
+#footer ul li:hover{
+    background:#a9cf38;
+}
+#footer .social{
+    float:right;
+}
+
+
+/*SERVICES*/
+#services-banner, #faq-banner{
+    background:#a9cf38;
+    padding: 150px 0 165px 0;
+}
+#services-banner h1, #faq-banner h1{
+    font-size:312.50%;
+    color:#fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px; 
+    display:inline-block;
+}
+#services-banner h1 span, #faq-banner h1 span{
+    border-bottom: 2px solid #ed4593;
+    padding-bottom: 19px; 
+}
+#services-banner p, #blog-banner p, #faq-banner p{
+    margin-top: 20px;
+    color:#fff;
+    font-size:125%;
+    width: 80%;
+    text-align: justify;
+}
+
+/* SERVICES INDIVIDUAL  - DIGITAL XRAYS */
+#services-individual-banner{
+    padding: 160px 0px;
+    background-size: cover;
+}
+.digitalxrays{
+    background: url(img/digitalxray-bg.jpg) center center;
+}
+#services-individual-banner img{
+    border: 2px solid #a9cf38;
+    border-radius: 50%;
+    width:100%;
+}
+#services-individual-banner h1{
+    font-size:312.50%;
+    text-transform: uppercase;
+    color:#555555;
+    margin-bottom: 20px;
+}
+#services-individual-banner p{
+    margin-top: 20px;
+    font-size:100%;
+    color:#555555;
+    line-height:28px;
+    text-align: justify;
+}
+#services-individual-container {
+    padding-top:70px;
+}
+#services-individual-container p{
+    color:#555555;
+    font-size: 93.75%;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#services-individual-header h2{
+    font-size:125%;
+}
+#services-individual-container img{
+    float:right;
+    width:100%;
+}
+.services-individual-header h2{
+    margin-bottom:20px;
+    font-weight: bold;
+}
+.services-individual-header{
+    margin-bottom: 50px;
+}
+
+.services-sealants{
+    background: url(img/services-sealants-bg.jpg) center center;
+}
+.tooth-colored-fillings{
+    background: url(img/services-sealants-bg.jpg) center center;
+}
+.tooth-whitening{
+    background: url(img/services-toothwhitening-bg.jpg) center center;
+}
+.white-crowns{
+    background: url(img/services-toothwhitening-bg.jpg) center center;
+}
+
+.services-individual-header ol.sealants-procedure{
+    list-style: none;
+}
+#services-individual-container  ol.sealants-procedure li p{
+    margin:0px;
+    padding:0;
+}
+.tooth-colored-fillings .line-break, .tooth-whitening .line-break,.white-crowns .line-break, #slider .line-break{
+    width: 100%;
+    display: block;
+    height:2px;
+    background: #555555;
+}
+#slider .line-break{
+    width: 100%;
+    display: block;
+    height:2px;
+    background: #fff;
+    margin-top: 20px;
+}
+#slider .line-break:before{
+    content:"";
+    width: 16%;
+    display: block;
+    height: 100%;
+    background: #ed4593;
+}
+.tooth-colored-fillings .line-break:before,.tooth-whitening .line-break:before,.white-crowns .line-break:before, #blog-banner .line-break:before{
+    content:"";
+    width: 16%;
+    display: block;
+    height: 100%;
+    background: #ed4593;
+}
+#blog-article-banner{
+    background: url(img/blog-article-bg.jpg) center center;
+    background-size: cover;
+    min-height: 490px;
+    position: relative;
+}
+.blog-article-header h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+    font-size:125%;
+}
+.blog-article-header{
+    background: rgba(169,207,56,.8);  
+    padding: 30px 0 30px 30px;
+    position: absolute;
+    width:100%;
+    width:768px;
+    max-width: 100%;
+    bottom:0;
+}
+.blog-article-header p{
+    font-size:81.25%;
+    margin-top:10px;
+    color:#fff;
+}
+.blog-article-header p span{
+    border-bottom: 1px dotted #fff;
+}
+#content .share-media  a{
+    color:#fff;
+    font-size: 81.25%;
+    margin-right: 10px;
+}
+#content .share-media span:last-child{
+    padding: 5px 20px;
+    background:#cdcdcd;
+}
+#content .share-media span:first-child{
+    padding:5px;
+    background:#b7b7b7;
+}
+#content .col-md-8{
+    padding-right: 15px;
+    padding-left:0;
+}
+#content p.margin-content{
+    margin-top:35px;
+    font-size:93.75%;
+    color:#555555;
+    line-height: 20px;
+}
+#content p.article-quote{
+    color:#555555;
+    font-size:137.50%;
+    line-height: 35px;
+    padding: 0 50px;
+    border-top:2px solid #dadada;
+    border-bottom: 2px solid #dadada;
+    margin-top:35px;
+}
+#content p.article-quote span{
+    font-size:387.5%;
+    color:#a9cf38;
+    display: block;
+}
+#content p.article-quote span.left{
+    position: relative;
+    top:50px;
+    left:-50px;
+}
+#content p.article-quote span.right{
+    position: relative;
+    right:0px;
+    text-align: right;
+}
+#content img.left-img,#content .comments{
+    margin-top:35px;
+}
+
+#content .comment-header,#content .leave-a-comment{
+    overflow: hidden;
+    margin-bottom:50px;
+}
+#content .comment-header h4, #content .leave-a-comment h4{
+    display: inline-block;
+    font-size:87.5%;
+    color:#333333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#content .comment-header h4:after{
+    content:"";
+    display: inline-block;
+    height:2px;
+    width:100%;
+    background: #dadada;
+    z-index: -1;
+    position: absolute;
+    top:8px;
+    right:-130px;
+}
+#content .comment h4{
+    font-size:93.75%;
+    color:#333333;
+    margin-bottom: 10px;
+}
+#content .comment h4 span:first-child,#content .comment h4 span:last-child{
+    font-weight: bold;
+}
+#content .comment h4 span:last-child{
+    float:right;
+    color:#9d9d9d;
+    font-size:87.5%;
+}
+#content .comment p{
+    line-height: 25px;
+    font-size:93.75%;
+    color:#333333;
+}
+#content .comment-container,#content .reply-container{
+ 
+    padding:20px;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+#content .comment-container{
+   background: #f5f5f5;    
+}
+#content .reply-container{
+    background: #fafafa;
+}
+#content .reply .row{
+    padding-left:70px;
+}
+#content .leave-a-comment{
+    margin-top:15px;
+}
+#content .leave-a-comment .row{
+    padding:0;
+}
+#content .leave-a-comment h4:after{
+    content:"";
+    display: inline-block;
+    height:2px;
+    width:100%;
+    background: #dadada;
+    z-index: -1;
+    position: absolute;
+    top:8px;
+    right:-160px;
+}
+#content .leave-a-comment .row{
+    margin-bottom: 30px;
+}
+#content form .button{
+    color:#fff;
+    font-size: 75%;
+    text-transform: uppercase;
+    display: block;
+    width:100%;
+    padding: 15px 0;
+    background: #ed4593;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+}
+#content .search-article{
+    margin-top:45px;
+}
+#content .header-margin, #blog-content .header-margin{
+    margin-bottom: 40px;
+}
+#blog-content .search-article,#content .search-article{
+    height: 40px;
+}
+#blog-content .search-article input,#content .search-article input{
+    height: 40px;;
+}
+#blog-content .search-article{
+    padding:0px;
+}
+#content .header-margin h4, #blog-content .header-margin h4{
+    font-size:93.75%;
+    color:#231f20;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#content .header-margin .col-md-9,#blog-content .header-margin .col-md-9{
+    padding: 0;
+    position: relative;
+    top:8px;
+}
+#content .line-breaker-right-article, #blog-content .line-breaker-right-article{
+    height:  2px;   
+    background: #dadada;
+    margin-top:10px;
+    margin-bottom: 30px;    
+}
+#content .line-breaker-right-article:before,#blog-content .line-breaker-right-article:before{
+    content:"";
+    display: block;
+    background: #a9cf38;
+    width: 70px;
+    height:2px;
+}
+#content .follow-us span,#blog-content .follow-us span{
+    color:#272324 ;
+    margin-right:20px;
+}
+#content  .recent-post h5, #blog-content .recent-post h5{
+    font-size:93.75%;
+    font-weight: bold;
+    color:#231f20;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#content .recent-post p, #blog-content .recent-post p{
+    font-size: 82.25%;
+    color:#231f20;
+}
+#content .recent-post p span, #blog-content .recent-post p span{
+    border-bottom: 1px solid #231f20;
+}
+#content .recent-post .blog-recent,#blog-content .recent-post .blog-recent {
+    margin-bottom:20px;
+}
+#content .tag-cloud p, #blog-content .tag-cloud p{
+    display: inline-block;
+    padding: 10px 35px;
+    background:#ebebeb;    
+    font-size:75%;
+    margin-right:10px;
+    margin-top:10px;
+    border-radius: 5px;
+    color:#000;
+}
+#content .tag-cloud p.tag-type, #blog-content .tag-cloud p.tag-type{
+    background: #ed4593;
+    color:#fff;
+}
+#blog-banner{
+    padding: 150px 0 165px 0;
+    background:#a8cf38;
+}
+#blog-banner h1{
+    font-size:312.50%;
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display:inline-block;
+}
+#blog-banner .line-break{
+    width: 100%;
+    display: block;
+    height:2px;
+    background: #fff;
+}
+#blog-content
+{
+    padding: 45px 0 85px 0;
+}
+#blog-content .blog-wrapper:first-child,#blog-content .blog-wrapper:nth-child(2){
+    margin-top:0;
+}
+#blog-content  .row, #blog-content .col-md-8{
+    padding:0px;
+}
+#blog-content .blog-wrapper{
+    margin-top:20px;
+    max-width: 370px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    
+}
+#blog-content .blog-wrapper img{
+    width:100%;
+    position: absolute;
+    bottom: 0px;
+}
+.blog-description{
+    position: absolute;
+    bottom: 0;
+    right:25;
+    width: 100%;
+    padding: 25px 0 25px 25px;
+    background:rgba(169,207,56, .8);
+    box-sizing: border-box;
+}
+
+
+#blog-content .pagination-wrapper{
+    text-align: center;
+    margin-top:45px;
+}
+
+#blog-content .carousel-indicators{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: auto;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+}
+#blog-content .carousel-indicators, #blog-content .right-arrow, #blog-content .left-arrow{
+    display: inline-block;
+}
+#blog-content .pagination li, #blog-content .right-arrow, #blog-content .left-arrow{
+    text-indent: 0px;
+    margin: 0 0;
+    width: auto;
+    height: auto;
+    border:2px solid #acacac;
+    border-radius: 5px;
+    color:#acacac;
+    background-color: none;
+    padding: 15px 20px;
+    text-align: none;
+}
+#blog-content .pagination li.active{
+    color:#ea4592;
+    border:2px solid #ea4592;
+    background: none;
+    text-indent: 0px;
+}
+#contact-slider{
+    background: url(img/contact-bg.jpg) center center;
+    background-size: cover;
+    min-height: 490px;
+}
+#partners{
+    padding: 60px 0 75px 0;
+}
+#partners h3{
+    text-transform: uppercase;
+    color:#231f20;
+    font-size:125%;
+}
+#partners  p{
+    color:#555555;
+    font-size:93.75%;
+    line-height: 25px;
+    margin-top:35px;
+}
+#partners .partner-container{
+    margin-top:60px;
+    padding:0px 155px;
+}
+#partners .partner:first-child{
+    padding-top:0px;
+}
+#partners .partner{
+    padding-top:60px;
+}
+#dentist-content .another-location-form select{
+    height: 45px;
+}
+#dentist-content .view-location a{
+    text-transform: uppercase;
+    width:100%;
+    color:#fff;
+    font-size:75%;
+    display: inline-block;
+    background: #ed4593;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-top:10px;
+    font-weight: bold;
+}
+#dentist-content .team-row .col-md-4:first-child,#dentist-content .team-row .col-md-4:nth-child(2),#dentist-content .team-row .col-md-4:nth-child(3){
+    margin:0;    
+}
+#dentist-content .team-row .col-md-4{
+    margin-top:60px;
+}
+#dentist-content .team-row{
+    margin-bottom: 0px;
+}
+/* INDIVIDUAL-DENTIST*/
+#dentist-individual{
+    padding: 55px 0 85px 0;
+    background: #f7f7f7;
+}
+#dentist-individual .socials a span{
+    width:30px;
+}
+#dentist-individual .socials a{
+    font-size:125%;
+    display: block;
+    color:#555555;
+    margin-top:10px;
+}
+#dentist-individual h2.dentist-individual-header{
+    color:#231f20;
+    text-transform: uppercase;
+    font-size:125%;
+}
+#dentist-individual img{
+    width: 100%;
+}
+#dentist-individual .dentist-description p{
+    margin-bottom: 40px;    
+    line-height: 23.199999px;
+    text-align: justify;
+}
+#dentist-individual .available-locations p{
+    margin-bottom: 15px;
+}
+#dentist-individual .degree p{
+    margin-bottom: 10px;
+}
+#dentist-individual .degree div.line-break, #dentist-individual .available-locations div.line-break,#dentist-individual .about-dentist div.line-break{
+    margin-top:10px;
+    height:2px;
+    background: #dadada;
+    margin-bottom:20px;
+}
+#dentist-individual .degree div.line-break:before, #dentist-individual .available-locations div.line-break:before,#dentist-individual .about-dentist div.line-break:before{
+    content:"";
+    display: inline;
+    position: absolute;
+    left:15px;
+    height:2px;
+    width:70px;
+    background:#a9cf38;
+}
+#dentist-individual p{
+    color:#555555;
+    font-weight:93.75%;
+}
+
+/* FAQ */
+#faqs{
+    padding: 55px 0 75px 0;
+}
+#faqs .faq{
+    padding:0px;
+    margin-bottom: 70px;
+}
+#faqs .faq:last-child{
+    margin-bottom: 0;
+}
+#faqs .faq h2, #faqs form label{
+    text-transform: uppercase;
+    color:#231f20;
+    font-size:125%;
+    border-bottom: 2px solid #dadada;
+    padding-bottom: 10px;
+}
+#faqs form label{
+    margin-bottom: 20px;
+}
+#faqs form label span{
+    height:2px;
+    border-bottom: 2px solid #a9cf38;    
+    padding-bottom: 9.5px;
+}
+#faqs form  input[type='text'], #faqs form input[type='email']{
+    height: 40px;
+}
+#faqs form  input[type='button']{
+    color:#fff;
+    background: #ed4593;
+    font-size: 85%;
+    text-transform: uppercase;
+    padding:20px 60px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#faqs .faq  p{
+    margin-top:20px;
+    line-height: 25px;
+    font-size: 93.75%;
+    color:#555555;
+}
+
+/*FAQS*/
+#location-banner{
+    background: url(img/location-bg.jpg) center center;
+    background-size: cover;
+    height: 678px;
+}
+#location-content{
+    padding: 50px 0 70px 0;
+}
+#location-content img{
+    width:100%;
+}
+#location-content h2.location-header{
+    color:#231f20;
+    font-size:125%;
+    text-transform: uppercase;
+}
+#location-content div.location-line-break{
+    height:2px;
+    background:#dadada;
+}
+#location-content div.location-line-break:before{
+    content:"";
+    display: block;
+    background:#a9cf38;
+    height:2px;
+    width: 18.92%;
+    margin-top:10px;
+}
+#location-content .location h3 a{
+    color:#231f20;
+    font-size:93.75%;
+    display:block;
+    padding: 10px;
+    background:#dadada;
+}
+#location-content .office-hour-dentist .location-line-break{
+    margin-bottom: 15px;
+}
+#location-content .office-hour-dentist ul{
+    list-style: none;
+}
+#location-content .office-hour-dentist{
+    margin-top:25px;
+}
+#location-content .locations{
+    margin-top:5px;
+}
+#location-content .office-hour-dentist li.no-margin{
+    margin-top:0px;    
+}
+#location-content .office-hour-dentist ul li{
+    margin-top:20px;
+}
+#location-content .dentist-in-house h2{
+    color:#555555;
+    font-weight: bold;
+}
+#location-content .dentist-in-house .col-md-10{
+    position: relative;
+    top:10px;
+}
+#location-content .office-hour-dentist img{
+    border-radius: 50%;
+    width:55px;
+    height: 55px;
+}
+#location-content .office-hour-dentist ul li div{
+    width:90%;
+    position: relative;
+    left:32px;
+    text-align: left;
+    top:-18px;
+}
+#location-content .office-hour-dentist span{
+    display: inline-block;
+    width:30px;
+}
+#location-content .location h3 a.location-active{
+    color:#fff;
+    background:#a9cf38;
+}
+#location-content .location ul{
+    list-style: none;
+}
+#location-content .location ul li a{
+    display: block;
+    padding:10px;
+    font-size: 93.75%;
+    color: #fff;
+    background:#4e4e4e;
+    text-transform: uppercase;
+}
+
+#location-content .location ul li.sub-location-active a{ 
+    background:#434343;
+}
+
+/*TESTIMONIAL*/
+#testimonial-banner{
+    padding: 155px 0 140px 0;
+    background: url(img/testimonial-bg.jpg) center center;
+    background-size: cover;
+}
+#testimonials-content{
+    padding: 92px 0 165px 0;
+    background: url(img/services-bg.jpg) center center;
+    background-size: cover;
+}
+#testimonial-banner h1{
+    color:#000000;
+    text-transform: uppercase;
+    font-size:312.50%;
+    border-bottom: 2px solid #fff;
+    display:block;
+    padding-bottom: 20px; 
+}
+
+#testimonial-banner h1 span{
+    border-bottom: 2px solid #ed4593;
+    padding-bottom: 19px; 
+}
+#testimonial-banner p{
+    margin-top: 20px;
+    color:#463f36;
+    font-size:125%;
+    width: 80%;
+    text-align: justify;
+}
+.testimonial-container{
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 50px;
+    display: inline-block;
+}
+#testimonials-content .col-md-6:nth-child(3),#testimonials-content .col-md-6:last-child{
+    margin-top:85px;    
+}
+.testimonial-quote{
+    width:100%;   
+    margin-bottom: 40px;
+}
+.testimonial-quote img{
+    display: block;
+    margin: 0 auto;
+}
+.rating{
+    text-align: center;
+    margin-bottom:45px;
+}
+.rating span{
+    color:#7ced10;
+    font-size:150%;
+    margin-right:15px;
+}
+.testimony p{
+    line-height: 25px;
+    font-size: 93.75%;
+    font-style: italic;
+}
+.testimonial-user{
+    text-align: center;
+    margin-top:50px;
+}
+.testimonial-user img{
+    border: 10px solid #b2b2b2;
+    border-radius: 50%;
+}
+.testimonial-user h2, .testimonial-user address{
+    text-transform: uppercase;
+    color:#000;
+}
+.testimonial-user h2{
+    text-transform: uppercase;
+    font-size: 140%;
+    margin-bottom: 10px;
+}
+.testimonial-user address{
+    font-size: 85%;
+}
