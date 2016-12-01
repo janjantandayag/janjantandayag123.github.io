@@ -173,6 +173,55 @@ input, select {
     border-radius: 5px;
     display: inline-block;
 }
+#mobile-nav{
+    display:none;
+}
+#mobile-nav ul{
+    clear:both;
+    background:#eee;
+    display: none;
+}
+#mobile-nav .container-fluid{
+    padding:0px;
+}
+#mobile-nav ul li{
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding:  10px 0px;
+}
+#mobile-nav ul li a{
+    color:#231f20;
+    font-size:150%;
+    text-decoration: none;
+}
+#mobile-nav .mobile-logo img{
+    float:left;
+}
+#mobile-nav a.icon span{
+    display: inline-block;;
+    float:right;
+    color:#a9cf38;
+    font-size: 180%;
+    position: relative;
+    top:5px;
+
+}
+#mobile-nav .mobile-top-nav:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#mobile-nav .mobile-top-nav{
+    padding: 10px;
+}
+#mobile-nav ul.display-none{
+    display: none;
+}
+#mobile-nav ul.display-mobile{
+    display: block;
+}
+
 
 
 #slider h1, #slider span, #slider a, .form-header h2,.services-header h2, #team .team-header h2, #blog .blog-header h2, .contact-header h2, #dentist-content h2{
@@ -1468,4 +1517,14 @@ input, select {
 }
 .testimonial-user address{
     font-size: 85%;
+}
+
+/*NAVIGATION*/
+@media screen and (max-width:1200px) {
+    #top-nav, #primary-nav{
+        display: none;
+    }
+    #mobile-nav{
+        display: block;
+    }
 }
