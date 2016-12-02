@@ -152,7 +152,7 @@ input, select {
 #primary-nav{
     padding:15px 0px 10px 0px;
 }
-#primary-nav ul li a{
+#primary-nav ul li a, .mobile-main-nav a, .mobile-secondary-nav a, .mobile-socials a{
     color:#231f20;
     font-size:75%;
     text-decoration: none;
@@ -173,14 +173,54 @@ input, select {
     border-radius: 5px;
     display: inline-block;
 }
+.mobile-top-nav:after{
+    content:"";
+    display: block;
+    clear:both;
+}
 
+.mobile-top-nav{
+    padding: 10px 0px;
+}
+.mobile-top-nav a.icon{
+    float:right;
+}
+.mobile-top-nav a span{
+    font-size:250%;
+    position: relative;
+    top:5px;
+    color:#a9cf38;
+}
+.mobile-main-nav a.active{
+    color:#a9cf38;
+}
+
+.mobile-main-navigations{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.mobile-style{
+    background: rgba(0,0,0,.5);
+}
+
+.mobile-style a:hover{
+    background: #a9cf38;
+    color:#fff;
+}
+.mobile-main-nav a, .mobile-secondary-nav a{
+    display: block;
+    text-align: center;
+    padding:10px 0px;
+}
+.mobile-main-nav a, .mobile-secondary-nav a, .mobile-socials a{
+    font-size:140%;
+}
 
 /*SLIDER*/
 #slider h1, #slider span, #slider a, .form-header h2,.services-header h2, #team .team-header h2, #blog .blog-header h2, .contact-header h2, #dentist-content h2{
     text-transform:uppercase;
 }
-
-
 #slider{
     background:#a9cf38;
     padding:172px 0px 187px 0px;
@@ -1475,8 +1515,5 @@ input, select {
 @media screen and (max-width:1200px) {
     #primary-nav{
         display: none;
-    }
-    #mobile-nav{
-        display: block;
     }
 }
