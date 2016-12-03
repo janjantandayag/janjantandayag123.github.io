@@ -207,7 +207,7 @@ input, select {
     top:5px;
     color:#a9cf38;
 }
-.mobile-main-nav a.active{
+.mobile-main-nav a.active, #mobile-nav a.active{
     color:#a9cf38;
 }
 .mobile-socials{
