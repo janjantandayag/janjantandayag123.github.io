@@ -698,6 +698,7 @@ input, select {
     text-transform: uppercase;
     font-size:93.75%;
     color:#fff;
+    font-weight: bold;
 }
 #pre-footer .pre-footer-header hr{
     background: #a9cf38;
@@ -1676,7 +1677,14 @@ input, select {
         margin: 0 auto;
         margin-bottom:20px;
     }
-    #team .team-row img{
+    #footer{
+        padding-top:20px;
+    }
+    #footer .social ul li{
+        float: none;
+    }
+    #footer .copyright, #footer .social ul{
+       text-align: center;
     }
 }
 @media screen and (max-width:767px){
@@ -1693,6 +1701,9 @@ input, select {
     }
     #blog .blog-margin-top{
         margin-top:15px;
+    }
+    #pre-footer .margin-pre-footer{
+        margin-top:30px;
     }
 }
 @media screen and (max-width:350px){
