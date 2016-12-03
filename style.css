@@ -1573,6 +1573,9 @@ input, select {
     #services .service-header img{
         max-width: 500px;
     }
+    #contact .bg-img img{
+        display: none;
+    }
 }
 @media screen and (max-width:590px){
     .mobile-secondary-nav{
@@ -1631,6 +1634,30 @@ input, select {
         transition: all 1s;
     }
 }
+@media screen and (max-width:325px){
+    #testimonial .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        background: #606060;
+        border: none;
+        border-radius: 50%;
+        transition: all 2s;
+    }
+    #testimonial .carousel-indicators .active{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        background: #606060;
+        border: none;
+        border-radius: 50%;
+        background-color: #a9cf38;
+    }
+}
 @media screen and (max-width:991px){
     #services .service-header .col-md-4{
         text-align: center;
@@ -1643,6 +1670,14 @@ input, select {
     #setup-appointment a, #patient-registration-form a{
         margin-top:20px;
     }
+    #team .col-md-4{
+        max-width: 450px;
+        max-height: 100%;
+        margin: 0 auto;
+        margin-bottom:20px;
+    }
+    #team .team-row img{
+    }
 }
 @media screen and (max-width:767px){
     #services .service-header img{
@@ -1651,6 +1686,13 @@ input, select {
     #services .service-header .col-md-8{
         margin-top:20px;
         margin-bottom:20px;
+    }
+    #blog .blogs-wrapper{
+        width:100%;
+        margin: 0 auto;
+    }
+    #blog .blog-margin-top{
+        margin-top:15px;
     }
 }
 @media screen and (max-width:350px){
