@@ -95,18 +95,11 @@ input, select {
 
 /*END CSS RESET */
 
-/* TEMPORARY NAV */
-.tempo-nav a{
-    margin-right: 50px;
-    color:#000;
-    margin-top:20px;    
-}
-.tempo-nav a.tempo-active{
-    color:green;
-    font-weight: bold;
-}
 
 /*TOP-NAV*/
+.main-page{
+    overflow: hidden;
+}
 #top-nav{
     background: #a9cf38;
 }
@@ -174,6 +167,7 @@ input, select {
     display: inline-block;
 }
 
+/*MOBILE NAV*/
 .mobile-main-nav a, .mobile-secondary-nav a, .mobile-socials a{
     color:#fff;
     font-size:75%;
@@ -181,11 +175,9 @@ input, select {
     text-transform: uppercase;
     
 }
-
 #mobile-nav, .mobile-secondary-nav, .mobile-socials{
     display: none;
 }
-
 .mobile-top-nav:after{
     content:"";
     display: block;
@@ -284,6 +276,7 @@ input, select {
     font-size:125%;
     color:#fff;    
     margin-top:25px;
+    line-height: 30px;
 }
 #slider a{
     display:inline-block;
@@ -373,11 +366,6 @@ input, select {
 #services .col-md-6:hover{
     cursor: pointer;    
 }
-.services-hover{
-    border:2px solid green;
-    border-radius:50%;
-    padding:40px;   
-}
 
 #services .services-header-desc p, #team .team-header-desc p, #blog .blog-header-desc p, .contact-header-desc p, #dentist-content p{
     font-size:93.75%;
@@ -386,11 +374,12 @@ input, select {
 #services .service-header img{
     border:2px solid #555555;
     border-radius:50%;
-    padding:40px;   
+    padding:40px;
+    max-width:500px;
 }
 #services .service-header h3{
     font-size: 125%;
-    margin-top:50px;
+    margin-top:20px;
     margin-bottom: 20px;
 }
 #services .service-header p{
@@ -402,6 +391,7 @@ input, select {
     text-align: center;
     vertical-align: center;
 }
+
 #services .see-full a:first-child,#services .see-full a:last-child, #team .see-full a:last-child,#team .see-full a:first-child{
     padding:15px 20px;
     border:2px solid #555555;
@@ -1553,12 +1543,35 @@ input, select {
 }
 
 /*NAVIGATION*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
     #primary-nav{
         display: none;
     }
     #mobile-nav{
         display: block;
+    }
+    #slider .item img{
+        display: none;
+    }
+    #slider .item{
+        text-align: center;
+        width:100%;
+    }
+    #slider{
+        max-height: 100%;
+        padding:0 0 100px 0;
+    }
+    #slider .carousel-inner{
+        top:0px;
+    }
+    #services .service-header h3{
+        margin-top:0px;
+    }
+    #services .service-header .col-md-8{
+        padding-left:60px;
+    }
+    #services .service-header img{
+        max-width: 500px;
     }
 }
 @media screen and (max-width:590px){
@@ -1583,6 +1596,63 @@ input, select {
         text-align: center;
     }
 } 
+@media screen and (max-width:382px){
+    #services .see-full,#team .see-full {
+        margin-top:85px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    #services .see-full a:first-child,#services .see-full a:last-child, #team .see-full a:last-child,#team .see-full a:first-child{
+        padding:8px;
+        border:2px solid #555555;
+        border-radius: 5px;
+        color:#555555;
+        display:inline-block;
+        text-decoration: none;
+    }
+    #services .see-full a:nth-child(2),#team .see-full a:nth-child(2){
+        text-transform: uppercase;
+        font-size: 75%;
+        padding:10px;
+        color:#ed4593;
+        border:2px solid #ed4593;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width:374px){
+    #setup-appointment a, #patient-registration-form a{
+      font-size:100%;
+      transition: 1s all;   
+    }
+    #slider h1{
+        font-size:450%;
+        transition: all 1s;
+    }
+}
+@media screen and (max-width:991px){
+    #services .service-header .col-md-4{
+        text-align: center;
+    }
+    #services .service-header .col-md-8{
+        padding-left:15px;
+        padding-right:15px;
+        text-align: center;
+    }
+    #setup-appointment a, #patient-registration-form a{
+        margin-top:20px;
+    }
+}
+@media screen and (max-width:767px){
+    #services .service-header img{
+        max-width:800px;
+    }
+    #services .service-header .col-md-8{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
 @media screen and (max-width:350px){
     #top-nav{
         display: none;
