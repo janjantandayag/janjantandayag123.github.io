@@ -152,7 +152,7 @@ input, select {
 #primary-nav{
     padding:15px 0px 10px 0px;
 }
-#primary-nav ul li a, .mobile-main-nav a, .mobile-secondary-nav a, .mobile-socials a{
+#primary-nav ul li a{
     color:#231f20;
     font-size:75%;
     text-decoration: none;
@@ -173,10 +173,26 @@ input, select {
     border-radius: 5px;
     display: inline-block;
 }
+
+.mobile-main-nav a, .mobile-secondary-nav a, .mobile-socials a{
+    color:#fff;
+    font-size:75%;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#mobile-nav, .mobile-secondary-nav, .mobile-socials{
+    display: none;
+}
+
 .mobile-top-nav:after{
     content:"";
     display: block;
     clear:both;
+}
+.mobile-container{
+    position: relative;
 }
 
 .mobile-top-nav{
@@ -194,19 +210,44 @@ input, select {
 .mobile-main-nav a.active{
     color:#a9cf38;
 }
-
-.mobile-main-navigations{
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+.mobile-socials{
+    text-align: center;
 }
+.mobile-socials a{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#mobile{
+    position: absolute;
+    left:0px;
+    z-index: 1;
+    width:100%;
+}
+.display-none{
+    display: none;
+}
+
+.animateIcon{
+    transform:rotate(45deg);
+    transition: all .3s;
+}
+.animateBack{
+    transform:rotate(0deg);
+    transition: all .3s;
+}
+.show-nav{
+    display: block;
+}
+
 .mobile-style{
-    background: rgba(0,0,0,.5);
+    background: rgba(29,29,29,1);
 }
 
 .mobile-style a:hover{
     background: #a9cf38;
     color:#fff;
+    transition: all 1s;
 }
 .mobile-main-nav a, .mobile-secondary-nav a{
     display: block;
@@ -1515,5 +1556,38 @@ input, select {
 @media screen and (max-width:1200px) {
     #primary-nav{
         display: none;
+    }
+    #mobile-nav{
+        display: block;
+    }
+}
+@media screen and (max-width:590px){
+    .mobile-secondary-nav{
+        display: block;
+    }
+    #top-nav ul li:not(.social){
+        display: none;
+    }
+    #top-nav ul li
+    {
+        float:none;
+        display: inline-block;
+        transition: all 1s;
+    }  
+    #top-nav .container{
+      
+        width: 100%;
+    } 
+    #top-nav ul{
+        width:100%;
+        text-align: center;
+    }
+} 
+@media screen and (max-width:350px){
+    #top-nav{
+        display: none;
+    }
+    .mobile-socials{
+        display: block;
     }
 }
