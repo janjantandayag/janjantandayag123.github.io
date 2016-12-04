@@ -1727,3 +1727,21 @@ input, select {
         display: block;
     }
 }
+@media screen and (max-width:312px){
+
+#team .member-desc h4, #dentist-content .member-desc h4{
+    font-size: 86%;
+    padding-left:5px;
+    transition:all 1s;
+}
+#team .member-desc h2,#dentist-content .member-desc h2{
+    font-size: 80%;
+    padding-left:5px;
+    transition:all 1s;
+   
+}
+#team .member-social:before, #dentist-content .member-social:before, #dentist-content .member-social:before{
+    display:none;
+    transition:all 1s;
+}
+}
