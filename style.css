@@ -316,10 +316,17 @@ input, select {
     border-bottom:2px solid #dadada;
     padding-bottom:20px;
     margin-bottom:35px;
+    position: relative;
 }
-.form-header h2 span, .services-header h2 span,  #team .team-header h2 span, #blog .blog-header h2 span, .contact-header h2 span,#dentist-content .dentist-container h2 span{
-    border-bottom:2px solid #a9cf38;
-    padding-bottom:20px;
+.form-header h2:after, .services-header h2:after,  #team .team-header h2:after, #blog .blog-header h2:after, .contact-header h2:after,#dentist-content .dentist-container h2:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #a9cf38;
+    width:70px;
+    height: 2px;
+    left:0px;
+    margin-top:20px;
 }
 #appointment-form form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
    color:#b4b4b4;
