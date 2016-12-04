@@ -1635,6 +1635,12 @@ input, select {
         transition: all 1s;
     }
 }
+@media screen and (max-width:295px){
+    #slider h1{
+        font-size:350%;
+        transition: all 1s;
+    }
+}
 @media screen and (max-width:325px){
     #testimonial .carousel-indicators li {
         display: inline-block;
