@@ -872,7 +872,7 @@ input, select {
     margin:0px;
     padding:0;
 }
-.tooth-colored-fillings .line-break, .tooth-whitening .line-break,.white-crowns .line-break, #slider .line-break{
+.tooth-colored-fillings .line-break, .digitalxrays .line-break,.tooth-whitening .line-break,.white-crowns .line-break, #slider .line-break, .services-sealants .line-break{
     width: 100%;
     display: block;
     height:2px;
@@ -892,7 +892,7 @@ input, select {
     height: 100%;
     background: #ed4593;
 }
-.tooth-colored-fillings .line-break:before,.tooth-whitening .line-break:before,.white-crowns .line-break:before, #blog-banner .line-break:before{
+.tooth-colored-fillings .line-break:before,.tooth-whitening .line-break:before,.white-crowns .line-break:before, #blog-banner .line-break:before, .digitalxrays .line-break:before, .services-sealants .line-break:before{
     content:"";
     width: 16%;
     display: block;
@@ -1665,6 +1665,10 @@ input, select {
         font-size: 280%;
         transition: all 1s;
     }
+    #services-individual-banner h1 {
+        font-size:200%;
+        transition: all 1s;
+    }
 }
 @media screen and (max-width:325px){
     #testimonial .carousel-indicators li {
@@ -1717,6 +1721,14 @@ input, select {
     #footer .copyright, #footer .social ul{
        text-align: center;
     }
+    #services-individual-banner{
+        text-align: center;
+    }
+    #services-individual-banner img{
+        max-width: 250px;
+        transition: all 1s;
+        margin-bottom:50px;
+    }
 }
 @media screen and (max-width:767px){
     #services .service-header img{
@@ -1735,6 +1747,18 @@ input, select {
     }
     #pre-footer .margin-pre-footer{
         margin-top:30px;
+    }
+    .img-clear:after{
+        display: block;
+        content:"";
+        clear:both;
+    }
+    .sealants-margin-bottom h2, .services-tcf-margin, .tw-margin, .wc-margin{
+        margin-top: 60px;
+    }
+    .padding-par{
+        padding-right:15px;
+        padding-left: 15px;
     }
 }
 @media screen and (max-width:350px){
