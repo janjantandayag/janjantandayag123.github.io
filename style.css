@@ -1661,6 +1661,10 @@ input, select {
         font-size:350%;
         transition: all 1s;
     }
+    #services-banner h1{
+        font-size: 280%;
+        transition: all 1s;
+    }
 }
 @media screen and (max-width:325px){
     #testimonial .carousel-indicators li {
