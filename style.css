@@ -305,6 +305,9 @@ input, select {
     position: relative;
     top: -120px;
 }
+/* END SLIDER */
+
+/* APPOINTMENT FORM */
 
 #appointment-form{
     padding:50px 0px;
@@ -361,6 +364,7 @@ input, select {
 #appointment-form .no-padding-left{
     padding:0;
 }
+/*END APPOINTMENT FORM*/
 /*SERVICES*/
 #services{
     background: url(img/services-bg.jpg) center center;
@@ -777,10 +781,17 @@ input, select {
     border-bottom: 2px solid #fff;
     padding-bottom: 20px; 
     display:inline-block;
+    position: relative;
 }
-#services-banner h1 span, #faq-banner h1 span{
-    border-bottom: 2px solid #ed4593;
-    padding-bottom: 19px; 
+#services-banner h1:after, #faq-banner h1:after{
+    position: absolute;
+    content:"";
+    display:block;
+    width:20%;
+    height: 2px;
+    background: #ed4593;
+    margin-top: 20px;
+    
 }
 #services-banner p, #blog-banner p, #faq-banner p{
     margin-top: 20px;
@@ -1551,13 +1562,16 @@ input, select {
 }
 
 /*NAVIGATION*/
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1200px){
     #primary-nav{
         display: none;
     }
     #mobile-nav{
         display: block;
     }
+}
+
+@media screen and (max-width:1199px) {
     #slider .item img{
         display: none;
     }
