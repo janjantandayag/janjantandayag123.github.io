@@ -1821,3 +1821,45 @@ input, select {
     transition:all 1s;
 }
 }
+@media screen and (max-width:552px){
+    #content .col-md-8{
+        width: 100%;
+        padding:0px;
+    }
+    .padding-content{
+        padding: 0px 15px;
+    }
+    .share-media a{
+        display: block;
+        width: 100%;
+        background:#cdcdcd;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+    #content .share-media span:first-child {
+        width: 25%;
+        background: #b7b7b7;
+        text-align: center;
+    }
+    #content .share-media span:last-child {
+        width: 75%;
+        background: #cdcdcd;
+    }
+}
+
+@media screen and (max-width:668px){
+    .comment-container, .comment img{
+        display: block;
+    }
+}
+@media screen and (max-width:461px){
+    #content .comment h4 span:first-child, #content .comment h4 span:last-child, #content .comment h4{
+        font-size:85%;
+        transition: all 1s;
+    }    
+    #content .comment h4 span:last-child{
+        display: block;
+        float:none;
+        margin-top:20px;
+    }
+}
