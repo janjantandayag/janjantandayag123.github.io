@@ -1598,6 +1598,9 @@ input, select {
     #contact .bg-img img{
         display: none;
     }
+    #blog-content .col-md-8{
+        margin-top:-37px;
+    }
 }
 @media screen and (max-width:590px){
     .mobile-secondary-nav{
@@ -1729,6 +1732,9 @@ input, select {
         transition: all 1s;
         margin-bottom:50px;
     }
+     #blog-content .col-md-8{
+        margin-top:0px;
+    }
 }
 @media screen and (max-width:767px){
     #services .service-header img{
@@ -1759,6 +1765,34 @@ input, select {
     .padding-par{
         padding-right:15px;
         padding-left: 15px;
+    }
+    #blog-content .item .blog-wrapper:first-child{
+        margin-bottom: 20px;
+    }
+    #blog-content .item{
+        padding-right: 15px;
+    }
+    #blog-content .blog-wrapper{
+        width: 100%;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:390px){
+     #blog-content .blog-wrapper{
+        max-width: 375px;
+        max-height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;      
+    }
+    #blog-content .header-margin .col-md-9 {
+        top:0px;
+        transition: all 1s;
     }
 }
 @media screen and (max-width:350px){
