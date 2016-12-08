@@ -1923,8 +1923,10 @@ input, select {
     }
     .dentist-in-house .col-xs-2{
         width: 25%;
+        transform: all 1s;
     } 
     .dentist-in-house .col-xs-10{
         width:55%;
+        transform: all 1s;
     }
 }
