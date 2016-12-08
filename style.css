@@ -1703,6 +1703,16 @@ input, select {
         position: relative;
         top:60px;
     }
+    #dentist-individual .socials a {
+        font-size: 100%;
+        display: block;
+        color: #555555;
+        margin-top: 10px;
+        transition: all 1s;
+    }
+    .available-locations{
+        margin-top:60px;   
+    }
 }
 @media screen and (max-width:992px){
     #services .service-header .col-md-4{
@@ -1796,6 +1806,27 @@ input, select {
     }
     #dentist-content .team-row .col-md-4:first-child,#dentist-content .team-row .col-md-4:nth-child(2),#dentist-content .team-row .col-md-4:nth-child(3),#dentist-content .team-row .col-md-4{
         margin-top:60px;    
+    }
+    #dentist-individual img {
+        max-width: 370px;
+        display: block;
+        margin: 0 auto;
+    }
+    .no-padding{
+        padding:0px;
+        margin-top:60px;
+    }
+    .socials{
+        text-align: center;
+        font-size:125%;
+        transition: all 1s;
+    }
+}
+@media screen and (max-width:390px){
+    .socials{
+        text-align: left;
+        font-size:100%;
+        transition: all 1s;
     }
 }
 @media screen and (max-width:390px){
