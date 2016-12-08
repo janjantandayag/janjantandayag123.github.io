@@ -1698,6 +1698,13 @@ input, select {
     }
 }
 @media screen and (max-width:991px){
+    
+    .margin-dentist{
+        position: relative;
+        top:60px;
+    }
+}
+@media screen and (max-width:992px){
     #services .service-header .col-md-4{
         text-align: center;
     }
@@ -1739,7 +1746,6 @@ input, select {
     #partners .partner-container{
         padding:0px;
     }
-
 }
 @media screen and (max-width:767px){
     #services .service-header img{
@@ -1784,6 +1790,12 @@ input, select {
         margin-left: auto;
         position: relative;
         overflow: hidden;
+    }
+    .margin-dentist{
+        top:0px;
+    }
+    #dentist-content .team-row .col-md-4:first-child,#dentist-content .team-row .col-md-4:nth-child(2),#dentist-content .team-row .col-md-4:nth-child(3),#dentist-content .team-row .col-md-4{
+        margin-top:60px;    
     }
 }
 @media screen and (max-width:390px){
