@@ -1827,6 +1827,21 @@ input, select {
     .question-form{
         margin-top:60px;
     }
+    .testimonial-user {
+        margin-top:0px;
+    }
+    
+    .testimonial-user img,.testimonial-user h2,.testimonial-user address{
+        position: relative;
+        top:-50px;
+        transition: all 1s;
+    }
+    #testimonials-content .col-md-6:nth-child(3), #testimonials-content .col-md-6:last-child {
+        margin:0px;
+    }
+    #testimonials-content .col-md-6{
+        
+    }
 }
 @media screen and (max-width:390px){
     .socials{
