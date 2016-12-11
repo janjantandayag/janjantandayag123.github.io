@@ -1869,6 +1869,12 @@ h1.dentist-page {
         padding-right:15px;
         text-align: center;
     }
+    #services .service-header .col-md-6{
+        margin-top: 50px;
+    }
+    #services .service-header{
+        margin-top:0px;
+    }
     #setup-appointment a, #patient-registration-form a{
         margin-top:20px;
     }
