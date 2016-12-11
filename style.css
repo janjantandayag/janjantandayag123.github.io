@@ -147,9 +147,7 @@ input, select {
     cursor: pointer;
 }
 #top-nav ul li:not(.social){
-    padding-right: 35px;
-    padding-top:10px;
-    padding-bottom: 13px;
+    padding: 10px 35px 13px 35px;
 }
 #top-nav ul li span{
     font-size:150%;
@@ -1697,7 +1695,7 @@ h1.dentist-page {
         margin-top:-37px;
     }
 }
-@media screen and (max-width:590px){
+@media screen and (max-width:668px){
     .mobile-secondary-nav{
         display: block;
     }
