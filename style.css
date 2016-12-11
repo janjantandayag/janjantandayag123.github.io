@@ -100,7 +100,7 @@ input, select {
 /*FONT STYLE*/
 @font-face {font-family: hindBold;src: url(fonts/Hind-Bold.ttf);}
 @font-face {font-family: hindLight;src: url(fonts/Hind-Light.ttf);}
-@font-face {font-family: hindMedium;src: url(fonts/Hind-Meduim.ttf);}
+@font-face {font-family: hindMedium;src: url(fonts/Hind-Medium.ttf);}
 @font-face {font-family: hindRegular;src: url(fonts/Hind-Regular.ttf);}
 @font-face {font-family: hindSemiBold;src: url(fonts/Hind-Semibold.ttf);}
 @font-face {font-family: montserratBold;src: url(fonts/Montserrat-Bold.ttf);}
@@ -1688,7 +1688,12 @@ h1.dentist-page {
     }
 }
 
-
+@media screen and (max-width: 425px){
+    #services-banner, #slider, #dentist-slider,#testimonial-banner, #services-individual-banner,#blog-banner,#faq-banner{
+        padding: 80px 0px;
+        transition: all 1s;
+    }
+}
 @media screen and (max-width:1199px) {
     #slider .item img{
         display: none;
@@ -1941,7 +1946,6 @@ h1.dentist-page {
     }
     .no-padding{
         padding:0px;
-        margin-top:60px;
     }
     .socials{
         text-align: center;
