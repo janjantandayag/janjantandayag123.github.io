@@ -1699,7 +1699,7 @@ h1.dentist-page {
         display: none;
     }
     #slider .item{
-        text-align: center;
+        text-align: left;
         width:100%;
     }
     #slider{
