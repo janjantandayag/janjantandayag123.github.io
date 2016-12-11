@@ -850,6 +850,7 @@ input, select {
     width: 80%;
     text-align: justify;
     font-family: hindRegular;
+    line-height: 30px;
 }
 
 /* SERVICES INDIVIDUAL  - DIGITAL XRAYS */
@@ -1590,6 +1591,7 @@ input, select {
     width: 80%;
     text-align: justify;
     font-family: hindRegular;
+    line-height: 30px;
 }
 .testimonial-container{
     background: #fff;
